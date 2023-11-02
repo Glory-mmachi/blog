@@ -1,0 +1,113 @@
+.newsletter-container {
+  padding: 100px 0;
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 100px;
+}
+.newsletter-container .left {
+  /* width: 50%; */
+}
+.newsletter-container .left h1 {
+  color: var(--slate-50, #f8fafc);
+  font-family: Roboto;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.newsletter-container .left h1 span {
+  background: linear-gradient(270deg, #22d3ee 52.35%, #0ea5e9 100.37%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Roboto;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.newsletter-container .left p {
+  color: var(--slate-300, #cbd5e1);
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 400;
+}
+.newsletter-container .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #0EA5E9; */
+  /* width: 50%; */
+  position: relative;
+}
+.newsletter-container .right input {
+  padding-inline: 40px;
+  font-size: 20px;
+  width: 522px;
+  height: 50px;
+  border-radius: 30px;
+  background: var(--slate-800, #1e293b);
+  border: none;
+  outline: none;
+}
+.newsletter-container .right input::placeholder {
+  color: #9ca3af;
+}
+.newsletter-container .right button {
+  position: absolute;
+  right: 5px;
+  bottom: 45px;
+  width: 164px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 30px;
+  background: var(
+    --Gradient,
+    linear-gradient(270deg, #22d3ee 50%, #0ea5e9 100%)
+  );
+}
+.line {
+  margin: 1px;
+  padding: 1px;
+  width: 100%;
+  height: 1px;
+  z-index: 9876;
+  background-color: white;
+}
+
+/* footer styling */
+.footer {
+  color: var(--slate-300, #cbd5e1);
+  font-size: 15px;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+  padding-inline: 100px;
+}
+.footer ul {
+  display: flex;
+  gap: 4px;
+}
+.footer li img {
+  width: 20px;
+  height: 20px;
+}
+
+/* screens below 789px */
+@media (max-width: 789px) {
+  .newsletter-container {
+    flex-direction: column;
+    gap: 20px;
+    padding-inline: 20px;
+  }
+  .footer{
+    padding-inline: 20px;
+  }
+}
+
+@media (max-width:900px) {
+  .newsletter-container .right button{
+    top: ;
+  }
+}

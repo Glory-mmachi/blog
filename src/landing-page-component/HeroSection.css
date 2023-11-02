@@ -1,0 +1,106 @@
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 100px;
+}
+.Hero-left {
+  width: 60%;
+}
+.Hero-left h1 {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  margin-top: 30px;
+}
+.Hero-left h1 span {
+  background: linear-gradient(270deg, #22d3ee 8.88%, #0ea5e9 38.31%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Roboto;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.Hero-left p {
+  color: var(--slate-300, #cbd5e1);
+  font-family: Roboto;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 40px 0;
+  padding-right: 15px;
+}
+.Hero-left p span {
+  background: linear-gradient(270deg, #22d3ee 13.04%, #0ea5e9 25.67%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Roboto;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.hero-app {
+  display: flex;
+  gap: 10px;
+}
+.hero-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 100px;
+  border: 0.5px solid #59acff;
+  background: linear-gradient(
+    180deg,
+    rgba(10, 102, 194, 0.56) 11%,
+    #0a66c2 89%
+  );
+  filter: blur(1px);
+}
+.hero-icon.blue {
+  border-radius: 100px;
+  border: 0.5px solid #1da1f2;
+  background: linear-gradient(180deg, #1da1f2 11%, rgba(29, 161, 242, 0.6) 89%);
+  filter: blur(1px);
+}
+.hero-icon.red {
+  border: 0.5px solid #f88;
+  background: linear-gradient(180deg, rgba(255, 0, 0, 0.67) 11%, #f00 89%);
+}
+
+@media (max-width: 700px) {
+  .hero-container {
+    display: flex;
+    flex-direction: column;
+    padding-inline: 20px;
+  }
+  .Hero-left {
+    order: 2;
+    width: 100%;
+  }
+  .Hero-left h1 {
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 30px;
+  }
+  .Hero-left h1 span {
+    background: linear-gradient(270deg, #22d3ee 8.88%, #0ea5e9 38.31%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Roboto;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+}
