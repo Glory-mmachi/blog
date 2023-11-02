@@ -1,9 +1,9 @@
 import '../App.css'
-import Hero from '../landing-page-component/HeroSection'
-import LatestPost from '../landing-page-component/LatestPost'
-import Navbar from '../landing-page-component/Navbar'
-import Newsletter from '../landing-page-component/Newsletter'
-import ProjectSection from '../landing-page-component/ProjectSection'
+import Hero from '../Components/HeroSection'
+import LatestPost from '../Components/LatestPost'
+import Navbar from '../Components/Navbar'
+import Newsletter from '../Components/Newsletter'
+import ProjectSection from '../Components/ProjectSection'
 
 function Home() {
 
