@@ -23,7 +23,7 @@ export default function Newsletter() {
         <input type="email" placeholder="Enter your Email" /> <button>Subscribe</button>
       </div>
     </div>
-    <div className="line"></div>
+    <hr />
     <div className="footer">
         <p>&copy;Copyright 2023 by Glory’s blog.</p>
         <ul>
