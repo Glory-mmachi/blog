@@ -58,18 +58,19 @@
     justify-content: center;
     align-items: center;
     gap: 80px;
+    padding-inline: 20px;
   }
   .latest-post-container{
     padding-inline: 20px;
   }
  
   .card-container {
-    width: 360px;
+    width: 340px;
     height: 450px;
     
   }
   .card-container img {
-    width: 360px;
+    width: 340px;
     height: 292px;
     border-radius: 20px 20px 0px 0px;
     background: lightgray 50% / cover no-repeat;
