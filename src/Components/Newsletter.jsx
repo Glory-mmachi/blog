@@ -20,7 +20,7 @@ export default function Newsletter() {
         </p>
       </div>
       <div className="right">
-        <input type="email" placeholder="Enter your Email" /> <span><button>Subscribe</button></span>
+        <input type="email" placeholder="Enter your Email" /> <button>Subscribe</button>
       </div>
     </div>
     <div className="line"></div>

@@ -6,7 +6,7 @@
   color: var(--slate-50, #f8fafc);
   font-size: 40px;
   font-weight: 700;
-  margin-bottom: 80px;
+  margin-bottom: 30px;
 }
 .project-container h2 span {
   background: linear-gradient(270deg, #22d3ee 38.89%, #0ea5e9 51.56%);
@@ -69,18 +69,30 @@
   gap: 30px;
 }
 
-
-@media (max-width:700px) {
-  .project-container{
+@media (max-width: 700px) {
+  .project-container {
     padding-inline: 20px;
   }
   .project-main-content {
     display: flex;
     flex-direction: column;
-    
+  }
+  .project-container h2 {
+    font-size: 30px;
+  }
+  .project-container h2 span {
+    font-size: 30px;
   }
   .project-main-content-left img {
     width: 100px;
     height: 100px;
+  }
+}
+@media (max-width: 411px) {
+  .project-container h2 {
+    font-size: 25px;
+  }
+  .project-container h2 span {
+    font-size: 25px;
   }
 }

@@ -75,7 +75,7 @@
   background: linear-gradient(180deg, rgba(255, 0, 0, 0.67) 11%, #f00 89%);
 }
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
   .hero-container {
     display: flex;
     flex-direction: column;

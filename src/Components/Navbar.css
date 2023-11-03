@@ -30,10 +30,14 @@
   padding: 10px;
   align-items: flex-start;
   gap: 10px;
+  text-decoration: none;
+}
+a{
+  text-decoration: none;
+  color: #f8fafc;
 }
 @media (max-width:789px) {
   .nav-right {
-   
     gap: 5px;
     
   }

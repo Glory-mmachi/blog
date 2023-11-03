@@ -1,21 +1,16 @@
-import '../App.css'
-import Hero from '../Components/HeroSection'
-import LatestPost from '../Components/LatestPost'
-import Navbar from '../Components/Navbar'
-import Newsletter from '../Components/Newsletter'
-import ProjectSection from '../Components/ProjectSection'
+import "../App.css";
+import Hero from "../Components/HeroSection";
+import LatestPost from "../Components/LatestPost";
+import ProjectSection from "../Components/ProjectSection";
 
 function Home() {
-
   return (
-    <div className='app'>
-      <Navbar/>
-      <Hero/>
-      <ProjectSection/>
-      <LatestPost/>
-      <Newsletter/>
+    <div>
+      <Hero />
+      <ProjectSection />
+      <LatestPost />
     </div>
-  )
+  );
 }
 
-export default Home
+export default Home;
