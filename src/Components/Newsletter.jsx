@@ -1,4 +1,3 @@
-import React from "react";
 import "./Newsletter.css";
 import mo from '../assets/footer1.svg'
 import facebook from '../assets/footer2.svg'

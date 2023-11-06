@@ -1,0 +1,13 @@
+.blog-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.blog-top p {
+  color: var(--slate-300, #cbd5e1);
+  font-size: 15px;
+  font-weight: 400;
+  padding: 6px 0;
+  margin-bottom: 70px;
+}

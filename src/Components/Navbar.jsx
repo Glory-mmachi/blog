@@ -1,5 +1,4 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink,Link } from 'react-router-dom'
 import logoImg from '../assets/Frame.svg'
 import './Navbar.css'
 
@@ -12,9 +11,9 @@ function Navbar() {
         <h2>Ixartz’s Blog</h2>
     </Link>
     <ul className='nav-right'>
-        <li><Link to='/blog'>Blog</Link></li>
-        <li><Link to='/newsletter'>Newsletter</Link></li>
-        <li><Link to='/twitter'>Twitter</Link></li>
+        <li><NavLink to='/blog'>Blog</NavLink></li>
+        <li><NavLink to='/newsletter'>Newsletter</NavLink></li>
+        <li><NavLink to='/twitter'>Twitter</NavLink></li>
     </ul>
 
     </div>

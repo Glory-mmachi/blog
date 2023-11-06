@@ -1,5 +1,4 @@
 import "./ProjectSection.css";
-import React from "react";
 import bulb from "../assets/3D-illustrations-gabriel-pinheiro.com.svg";
 import arrowDown from "../assets/3D-illustrations-arrow down.com.svg";
 import trophy from "../assets/3D-illustrations-trophy.com.svg";

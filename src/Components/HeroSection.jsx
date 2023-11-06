@@ -1,4 +1,3 @@
-import React from "react";
 import "./HeroSection.css";
 import twitterLogo from "../assets/twitter.svg";
 import facebookLogo from "../assets/facebook.svg";

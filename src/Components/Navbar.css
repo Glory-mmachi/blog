@@ -32,9 +32,13 @@
   gap: 10px;
   text-decoration: none;
 }
-a{
+.nav-right a{
   text-decoration: none;
   color: #f8fafc;
+}
+.nav-right a.active{
+  color: rgb(180, 178, 178);
+
 }
 @media (max-width:789px) {
   .nav-right {

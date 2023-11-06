@@ -1,11 +1,17 @@
-import React from "react";
 import CardList from "../Components/CardList";
-
+import "./Blog.css";
 
 export default function Blog() {
   return (
-    <div>
-    <CardList/>
+    <div className="latest-post-container">
+      <div className="blog-top">
+        <h2>Posts Examples</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+          bibendum.
+        </p>
+      </div>
+      <CardList />
     </div>
   );
 }

@@ -1,9 +1,7 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import "./LatestPost.css";
 import arrowFront from "../assets/arrowFront.svg";
 import CardList from "./CardList";
-
 
 export default function LatestPost() {
   return (
@@ -15,12 +13,13 @@ export default function LatestPost() {
         <p>
           View all Posts{" "}
           <span>
-            <Link to='/blog'><img src={arrowFront} alt="arrow-front" /></Link>
+            <Link to="/blog">
+              <img src={arrowFront} alt="arrow-front" />
+            </Link>
           </span>
         </p>
       </div>
-<CardList/>
-    
+      <CardList />
     </div>
   );
 }

@@ -1,4 +1,3 @@
-import React from 'react'
 import './CardList.css'
 import post1 from "../assets/latestPost1.svg";
 import post2 from "../assets/latestPost2.svg";
