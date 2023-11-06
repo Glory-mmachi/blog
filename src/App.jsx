@@ -9,6 +9,7 @@ import Home from "./Pages/Home";
 
 //footer
 import Newsletter from "./Components/Newsletter";
+import BlogDetails from "./Pages/BlogDetails";
 
 function App() {
   useEffect(() => {
@@ -27,6 +28,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/blogDetails" element={<BlogDetails/>}/>
         </Routes>
         <Newsletter />
       </Router>

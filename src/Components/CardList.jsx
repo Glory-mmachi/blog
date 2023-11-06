@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './CardList.css'
 import post1 from "../assets/latestPost1.svg";
 import post2 from "../assets/latestPost2.svg";
@@ -5,7 +6,7 @@ import post3 from "../assets/latestPost3.svg";
 
 export default function CardList() {
   return (
-    <div>
+    <div className='cardList-container'>
          {/* cardlist */}
       <section>
         <div className="card-container">
@@ -21,7 +22,7 @@ export default function CardList() {
                 hendrerit dui odio id enim.
               </span>
             </p>
-            <button>view</button>
+           <Link to='/blogDetails'><button>view</button></Link> 
           </div>
         </div>
 
