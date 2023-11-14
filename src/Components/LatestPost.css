@@ -1,4 +1,4 @@
-.latest-post-container{
+.latest-post-container {
   padding-inline: 100px;
 }
 .top {
@@ -28,20 +28,23 @@
   gap: 12px;
 }
 
-@media (max-width:768px) {
-.top h2 {
- font-size: 30px;
-}
-.top h2 span{
-  font-size: 30px;
-}
+@media (max-width: 768px) {
+  .latest-post-container {
+    padding-inline: 20px;
+  }
+  .top h2 {
+    font-size: 30px;
+  }
+  .top h2 span {
+    font-size: 30px;
+  }
 }
 
-@media (max-width:412px) {
+@media (max-width: 412px) {
   .top h2 {
     font-size: 20px;
-   }
-   .top h2 span{
-     font-size: 20px;
-   }
+  }
+  .top h2 span {
+    font-size: 20px;
+  }
 }

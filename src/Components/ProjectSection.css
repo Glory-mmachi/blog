@@ -47,6 +47,7 @@
   );
 }
 .project-main-content-right h3 span .inner-text {
+  /* gap: 10px; */
   font-size: 10px;
   font-weight: 700;
   background: var(
@@ -86,6 +87,9 @@
   .project-main-content-left img {
     width: 100px;
     height: 100px;
+  }
+  .project-main-content-right h3{
+    flex-direction: column;
   }
 }
 @media (max-width: 411px) {

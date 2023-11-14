@@ -11,14 +11,12 @@ export default function HeroSection() {
       {/* Hero-left */}
       <div className="Hero-left">
         <h1>
-          Hi there, I’m <span>Ixartz</span>👋
+          Hi there, I’m <span>Glory</span>👋
         </h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-          malesuada nisi tellus, non imperdiet nisi tempor at. Lorem ipsum dolor
-          sit amet, <span>consectetur</span>  adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et <span> dolore</span>.
+          Explore a world of knowledge and insights on various topics, from technology to <span>science</span>. Join me on a journey through engaging articles and informative <span>content</span>.
         </p>
+     
         <div className="hero-app">
           <div className="hero-icon blue">
             <img src={twitterLogo} alt="twitter" width={35} height={25} />

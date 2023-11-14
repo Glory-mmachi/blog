@@ -14,8 +14,8 @@ export default function Newsletter() {
           Subscribe to my <br /><span>Newsletters</span>
         </h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-          malesuada nisi tellus, non imperdiet nisi tempor at.
+        Stay updated with the latest articles, news, and insights delivered
+            directly to your inbox.
         </p>
       </div>
       <div className="right">

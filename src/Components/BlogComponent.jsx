@@ -1,66 +1,41 @@
-
 import "./BlogComponent.css";
-import post1 from "../assets/latestPost1.svg";
+import { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
 
 export default function BlogComponent() {
+  const { id } = useParams();
+
+  const [data, setData] = useState(null);
+  const url = "https://glory-blog-api.vercel.app/posts/" + id;
+
+  const fetchData = async () => {
+    try {
+      const res = await fetch(url);
+      const responseData = await res.json();
+      setData(responseData);
+    } catch (error) {
+      console.error("Error fetching data: ", error);
+    }
+  };
+
+  useEffect(() => {
+    fetchData();
+  }, [id]);
+
   return (
     <div>
-    <div className="blogComponent-container">
-      <h2>Lorem ipsum dolor </h2>
-      <p className="date">By Ixartz on April 24, 2022 - 5 min read</p>
-      <img src={post1} alt="post" />
+      {data && (
+        <div className="blogComponent-container">
+          <h2>{data.title}</h2>
+          <p className="date">
+            By Ixartz on {data.time} - {data.readTime} read
+          </p>
+          <img src={data.image} alt="post" />
 
-      {/* main */}
-      <main>
-        <h3>Lorem ipsum dolor </h3>
-        <p>
-          Lorem ipsum dolor sit amet. Ut laudantium adipisci et animi dolorum et
-          neque error aut maxime nesciunt. Vel recusandae ducimus At dolorem
-          iste id magni quam id corrupti officiis At minus minus et quidem
-          rerum! 33 nihil quas aut consequatur asperiores est sunt illo et sunt
-          commodi. <br /> <br />
-          Non magni quisquam ex possimus ducimus id fuga dicta et obcaecati
-          blanditiis sed quidem sint est molestiae ea quam corrupti. Nam itaque
-          quae et ratione error vel possimus sunt! Qui cupiditate quae ut magnam
-          veritatis vel nemo dolores id aspernatur deleniti sed itaque aut odio
-          placeat.
-        </p>
-
-        <h3>Lorem ipsum dolor </h3>
-        <p>
-          Eum aperiam facilis aut deleniti ipsa At aspernatur nisi quo corporis
-          assumenda non dolores rerum ad velit porro rem nulla reprehenderit.
-          Non repudiandae harum ut harum laudantium et veritatis eaque et
-          nesciunt voluptas ad aliquam aliquam non nemo voluptas. Sit molestiae
-          doloribus At nemo repudiandae et reiciendis autem cum culpa optio ex
-          ipsum eius et accusantium omnis At neque quaerat.
-        </p>
-
-        <ul>
-          <li>Non magni quisquam</li>
-          <li>Non magni quisquam</li>
-          <li>Non magni quisquam</li>
-          <li>Non magni quisquam</li>
-        </ul>
-
-        <h3>Lorem ipsum dolor </h3>
-        <p>
-          Eum aperiam facilis aut deleniti ipsa At aspernatur nisi quo corporis
-          assumenda non dolores rerum ad velit porro rem nulla reprehenderit.
-          Non repudiandae harum ut harum laudantium et veritatis eaque et
-          nesciunt voluptas ad aliquam aliquam non nemo voluptas. Sit molestiae
-          doloribus At nemo repudiandae et reiciendis autem cum culpa optio ex
-          ipsum eius et accusantium omnis At neque quaerat.
-        </p>
-
-        <h3>Further Readings</h3>
-        <ul className="down">
-          <li>Lorem ipsum dolor </li>
-          <li>Lorem ipsum dolor </li>
-          <li>Lorem ipsum dolor </li>
-        </ul>
-      </main>
-    </div>
+          {/* Render HTML content */}
+          <div dangerouslySetInnerHTML={{ __html: data.body }} />
+        </div>
+      )}
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { useEffect } from "react";
+
 // Navbar
 import Navbar from "./Components/Navbar";
 
@@ -12,15 +12,7 @@ import Newsletter from "./Components/Newsletter";
 import BlogDetails from "./Pages/BlogDetails";
 
 function App() {
-  useEffect(() => {
-    const fetchData = async () => {
-      const res = await fetch("https://latest-news1.p.rapidapi.com/");
-      const data = await res.json();
-      console.log(data);
-    };
-    fetchData();
-  }, []);
-
+ 
   return (
     <div className="app">
       <Router>
@@ -28,7 +20,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/blog" element={<Blog />} />
-          <Route path="/blogDetails" element={<BlogDetails/>}/>
+          <Route path="/blogDetails/:id" element={<BlogDetails />} />
         </Routes>
         <Newsletter />
       </Router>

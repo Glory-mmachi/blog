@@ -1,9 +1,10 @@
 import "./ProjectSection.css";
-import bulb from "../assets/3D-illustrations-gabriel-pinheiro.com.svg";
-import arrowDown from "../assets/3D-illustrations-arrow down.com.svg";
-import trophy from "../assets/3D-illustrations-trophy.com.svg";
+// import trophy from "../assets/3D-illustrations-trophy.com.svg";
+import { useTheme } from "../../../ContextApi";
 
 export default function ProjectSection() {
+  const { data } = useTheme();
+
   return (
     <div className="project-container">
       <h2>
@@ -11,82 +12,35 @@ export default function ProjectSection() {
       </h2>
       {/* main */}
       <section>
+        {data &&
+          data.projects.map(({id,image,title,tags,body}) => {
+            return (
+              <main className="project-main-content" key={id}>
+                {/* left */}
+                <div className="project-main-content-left">
+                  <img src={image} alt="bulb" />
+                </div>
 
-      
-      <main className="project-main-content">
-        {/* left */}
-        <div className="project-main-content-left">
-          <img src={bulb} alt="bulb" />
-        </div>
+                {/* right */}
+                <div className="project-main-content-right">
+                  <h3>
+                    {title}
+                    <span>
+                      {tags.map((tag, id) => {
+                        return (
+                          <span key={id} className="inner-text">
+                            {tag}
+                          </span>
+                        );
+                      })}
+                    </span>
+                  </h3>
 
-        {/* right */}
-        <div className="project-main-content-right">
-          <h3>
-            Project1
-            <span>
-              <span className="inner-text">Web Design</span>
-            </span>
-          </h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            bibendum.
-          </p>
-          <p>
-            Nunc non posuere consectetur, justo erat semper enim, non hendrerit
-            dui odio id enim.
-          </p>
-        </div>
-      </main>
-
-      <main className="project-main-content">
-        {/* left */}
-        <div className="project-main-content-left">
-          <img src={arrowDown} alt="bulb" />
-        </div>
-
-        {/* right */}
-        <div className="project-main-content-right">
-          <h3>
-            Project1
-            <span>
-              <span className="inner-text">Web Design</span>
-            </span>
-          </h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            bibendum.
-          </p>
-          <p>
-            Nunc non posuere consectetur, justo erat semper enim, non hendrerit
-            dui odio id enim.
-          </p>
-        </div>
-      </main>
-
-      <main className="project-main-content">
-        {/* left */}
-        <div className="project-main-content-left">
-          <img src={trophy} alt="trophy" />
-        </div>
-
-        {/* right */}
-        <div className="project-main-content-right">
-          <h3>
-            Project1
-            <span>
-              <span className="inner-text">Web Design</span>
-            </span>
-          </h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            bibendum.
-          </p>
-          <p>
-            Nunc non posuere consectetur, justo erat semper enim, non hendrerit
-            dui odio id enim.
-          </p>
-        </div>
-      </main>
+                  <p>{body}</p>
+                </div>
+              </main>
+            );
+          })}
       </section>
     </div>
   );
