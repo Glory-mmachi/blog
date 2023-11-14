@@ -1,6 +1,5 @@
+import { useTheme } from "../../ContextApi";
 import "./ProjectSection.css";
-// import trophy from "../assets/3D-illustrations-trophy.com.svg";
-import { useTheme } from "../../../ContextApi";
 
 export default function ProjectSection() {
   const { data } = useTheme();

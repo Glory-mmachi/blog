@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import "./LatestPost.css";
 import arrowFront from "../assets/arrowFront.svg";
 import CardList from "./CardList";
+import "./LatestPost.css";
 
 export default function LatestPost() {
   return (

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import "./CardList.css";
-import { useTheme } from "../../../ContextApi";
+import { useTheme } from "../../ContextApi";
 
 export default function CardList() {
   const { data } = useTheme();
