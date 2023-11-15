@@ -1,4 +1,5 @@
-import { useTheme } from "../../ContextApi";
+import { useTheme } from "../../ContextApi"
+import project from '../assets/3D-illustrations-gabriel-pinheiro.com.svg'
 import "./ProjectSection.css";
 
 export default function ProjectSection() {
@@ -12,12 +13,12 @@ export default function ProjectSection() {
       {/* main */}
       <section>
         {data &&
-          data.projects.map(({id,image,title,tags,body}) => {
+          data.projects.map(({id,title,tags,body}) => {
             return (
               <main className="project-main-content" key={id}>
                 {/* left */}
                 <div className="project-main-content-left">
-                  <img src={image} alt="bulb" />
+                  <img src={project} alt="bulb" />
                 </div>
 
                 {/* right */}

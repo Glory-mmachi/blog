@@ -19,12 +19,9 @@ function Navbar() {
         <li>
           <NavLink to="/newsletter">Newsletter</NavLink>
         </li>
-        <li>
-          <NavLink to="/twitter">Twitter</NavLink>
-        </li>
+        
       </ul>
 
-      {/* <img src={menuBtn} alt="" /> */}
     </div>
   );
 }
