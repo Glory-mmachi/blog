@@ -75,6 +75,27 @@
   background: linear-gradient(180deg, rgba(255, 0, 0, 0.67) 11%, #f00 89%);
 }
 
+.circle {
+  animation: circle 3s infinite linear forwards;
+}
+
+@keyframes circle {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  75% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
 @media (max-width: 768px) {
   .hero-container {
     display: flex;

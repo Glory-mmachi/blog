@@ -1,4 +1,4 @@
-.cardList-container  section{
+.cardList-container section {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,14 +19,18 @@
   border-radius: 20px;
   background: var(--slate-800, #1e293b);
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
 .card-container img {
   width: 310px;
   min-height: 250px;
   border-radius: 20px 20px 0px 0px;
   background: lightgray 50% / cover no-repeat;
+  transition: all 1s ease-in-out;
 }
-
+.card-container img:hover {
+  transform: scale(1.1);
+}
 .card-container .card-text h3 {
   padding: 10px;
   color: var(--slate-50, #f8fafc);
@@ -54,7 +58,7 @@
   border-radius: 20px;
 }
 @media (max-width: 768px) {
-  .cardList-container  section{
+  .cardList-container section {
     flex-wrap: nowrap;
   }
   .latest-post-container section {

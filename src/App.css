@@ -12,3 +12,11 @@ ul{
   color: #F8FAFC;
   font-family: 'Roboto', sans-serif;
 }
+button{
+  animation: circle 3s infinite linear forwards;
+
+}
+button:hover{
+  transform: scale(1.2);
+
+}

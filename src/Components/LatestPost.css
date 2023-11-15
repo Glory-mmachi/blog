@@ -6,6 +6,17 @@
   display: flex;
   justify-content: space-between;
 }
+.top span img {
+  animation: square 1s ease-in infinite;
+}
+@keyframes square {
+
+  100% {
+    transform: translateX(10px);
+
+  }
+}
+
 .top h2 {
   color: var(--slate-50, #f8fafc);
   font-size: 40px;
