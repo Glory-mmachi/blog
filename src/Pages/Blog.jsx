@@ -1,13 +1,11 @@
 import CardList from "../Components/CardList";
 import "../Components/Blog.css";
 import { useTheme } from "../../ContextApi";
-import Loading from "../Components/Loading";
 
 export default function Blog() {
   const { data } = useTheme();
   return (
     <div>
-      {/* {!data && <Loading />} */}
       {data && (
         <div className="latest-post-container">
           <div className="blog-top">
