@@ -1,6 +1,7 @@
 import "./BlogComponent.css";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import Loading from "./Loading";
 
 export default function BlogComponent() {
   const { id } = useParams();
@@ -24,6 +25,7 @@ export default function BlogComponent() {
 
   return (
     <div>
+      {!data && <Loading />}
       {data && (
         <div className="blogComponent-container">
           <h2>{data.title}</h2>

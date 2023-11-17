@@ -13,7 +13,7 @@ ul{
   font-family: 'Roboto', sans-serif;
 }
 button{
-  animation: circle 3s infinite linear forwards;
+  animation:  double 3s infinite linear forwards;
 
 }
 button:hover{

@@ -75,11 +75,10 @@
   background: linear-gradient(180deg, rgba(255, 0, 0, 0.67) 11%, #f00 89%);
 }
 
-.circle {
-  animation: circle 3s infinite linear forwards;
+.double {
+  animation: double 3s infinite linear forwards;
 }
-
-@keyframes circle {
+@keyframes double {
   0% {
     transform: scale(1);
   }

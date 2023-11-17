@@ -9,22 +9,23 @@ export default function ThemeProvider({ children }) {
     try {
       const res = await fetch(url);
       const responseData = await res.json();
-      setData(responseData); 
+      {
+        responseData && setData(responseData);
+      }
     } catch (error) {
       console.error("Error fetching data: ", error);
     }
   };
 
-  
   useEffect(() => {
     fetchData();
   }, []);
 
   return (
-    <ThemeContext.Provider value={{ data}}>{children}</ThemeContext.Provider>
+    <ThemeContext.Provider value={{ data }}>{children}</ThemeContext.Provider>
   );
 }
- 
+
 export function useTheme() {
   return useContext(ThemeContext);
 }

@@ -1,6 +1,7 @@
 import { useTheme } from "../../ContextApi"
 import project from '../assets/3D-illustrations-gabriel-pinheiro.com.svg'
 import "./ProjectSection.css";
+import Loading from "./Loading";
 
 export default function ProjectSection() {
   const { data } = useTheme();
@@ -11,6 +12,7 @@ export default function ProjectSection() {
         Recent <span>Projects</span>{" "}
       </h2>
       {/* main */}
+    {!data && <Loading />}
       <section>
         {data &&
           data.projects.map(({id,title,tags,body}) => {

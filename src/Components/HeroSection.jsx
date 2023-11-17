@@ -18,16 +18,16 @@ export default function HeroSection() {
         </p>
      
         <div className="hero-app ">
-          <div className="hero-icon blue circle">
+          <div className="hero-icon blue  double">
             <img src={twitterLogo} alt="twitter" width={35} height={25} />
           </div>
-          <div className="hero-icon circle">
+          <div className="hero-icon  double">
             <img src={facebookLogo} alt="facebook" width={20} height={35} />
           </div>
-          <div className="hero-icon circle">
+          <div className="hero-icon  double">
             <img src={linkedIn} alt="linkedIn" width={31} height={30} />
           </div>
-          <div className="hero-icon red circle">
+          <div className="hero-icon red  double">
             <img src={youtube} alt="youtube" width={40} height={24} />
           </div>
         </div>

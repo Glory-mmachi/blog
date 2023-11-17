@@ -1,7 +1,8 @@
-import BlogComponent from "../Components/BlogComponent"
-
+import BlogComponent from "../Components/BlogComponent";
 export default function BlogDetails() {
   return (
-    <div><BlogComponent/></div>
-  )
+    <div>
+      <BlogComponent />
+    </div>
+  );
 }
