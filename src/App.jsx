@@ -10,11 +10,16 @@ import Home from "./Pages/Home";
 //footer
 import Newsletter from "./Components/Newsletter";
 import BlogDetails from "./Pages/BlogDetails";
+import { useTheme } from "../ContextApi";
+import Loading from "./Components/Loading";
 
 function App() {
- 
+  const { data } = useTheme();
   return (
     <div className="app">
+      {!data && <Loading />}
+      {data && (
+        
       <Router>
         <Navbar />
         <Routes>
@@ -24,6 +29,7 @@ function App() {
         </Routes>
         <Newsletter />
       </Router>
+      )}
     </div>
   );
 }

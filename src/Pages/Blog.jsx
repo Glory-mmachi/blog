@@ -7,7 +7,7 @@ export default function Blog() {
   const { data } = useTheme();
   return (
     <div>
-      {!data && <Loading />}
+      {/* {!data && <Loading />} */}
       {data && (
         <div className="latest-post-container">
           <div className="blog-top">

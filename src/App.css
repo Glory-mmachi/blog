@@ -6,9 +6,11 @@
 ul{
   list-style-type: none;
 }
+body{
 
-.app {
   background: #0f172a;
+}
+.app {
   color: #F8FAFC;
   font-family: 'Roboto', sans-serif;
 }
