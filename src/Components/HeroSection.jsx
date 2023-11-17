@@ -3,7 +3,7 @@ import twitterLogo from "../assets/twitter.svg";
 import facebookLogo from "../assets/facebook.svg";
 import youtube from "../assets/youtube.svg";
 import linkedIn from "../assets/linkedin.svg";
-import boy from "../assets/boy.svg";
+import girl from "../assets/medAvatar.jpeg";
 
 export default function HeroSection() {
   return (
@@ -35,7 +35,7 @@ export default function HeroSection() {
 
       {/* Hero-right */}
       <div className="hero-right">
-        <img src={boy} alt="ooy-image" width={300} />
+        <img src={girl} alt="ooy-image" width={350} height={350} style={{borderRadius: "50%"}} />
       </div>
     </div>
   );

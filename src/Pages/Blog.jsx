@@ -1,5 +1,5 @@
 import CardList from "../Components/CardList";
-import "./Blog.css";
+import "../Components/Blog.css";
 
 export default function Blog() {
   return (
@@ -7,8 +7,7 @@ export default function Blog() {
       <div className="blog-top">
         <h2>Posts Examples</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          bibendum.
+          You can see all posts here and read them in detail in the blog page below or you can also subscribe to my newsletter.
         </p>
       </div>
       <CardList />
