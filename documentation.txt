@@ -1,0 +1,58 @@
+Documentation personal  blog that reflects more on Medical Laoratory science and technology.
+
+Components:
+1. BlogComponent
+Fetches a specific blog post using fetchData method.
+Displays the fetched blog post details like title, author, time, image, and content.
+2. CardList
+Renders a list of cards containing post previews.
+Uses useTheme context to access post data and maps through posts to display a preview for each post.
+3. HeroSection
+Contains a hero section introducing the blog and social media icons.
+Intended to display an introduction and social media links.
+4. LatestPost
+Displays a section with the latest blog posts.
+Uses CardList to render the latest posts.
+5. Navbar
+Displays a navigation bar with links to different sections/pages of the blog.
+6. Newsletter
+Allows users to subscribe to the blog's newsletter by entering their email.
+Includes social media links in the footer.
+7. ProjectSection
+Displays recent projects with details.
+Pages:
+1. Blog
+Displays a list of blog posts using the CardList component.
+2. BlogDetails
+Displays detailed information about a specific blog post using the BlogComponent.
+3. Home
+The main landing page displaying the hero section, recent projects, and latest blog posts.
+4. App
+Sets up the application routes using React Router.
+Includes the navigation bar, different routes for different pages/components, and the newsletter section.
+Context:
+1. ThemeProvider
+Provides a context for sharing blog data across components.
+Fetches data from the blog API and makes it available to child components.
+2. useTheme
+Custom hook allowing components to consume data provided by the ThemeProvider.
+Styling:
+The code also includes CSS files containing styles for various components such as BlogComponent, CardList, HeroSection, LatestPost, Navbar, Newsletter, ProjectSection, and some general styles like the application's background, button animations, etc.
+
+Notes:
+The code has dependencies on the react-router-dom library, custom hooks, and potentially other custom context providers or utility functions.
+Some media queries are included in the CSS files for responsive design, adjusting layouts for different screen sizes.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
